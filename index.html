@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polityka prywatności — MySancho</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1a1a; --muted: #5a5a5a;
+    --line: #e2e2e2; --accent: #0b5fff; --warn-bg: #fff8e6; --warn-line: #e0b34d;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a; --fg: #e8e8e8; --muted: #a0a4ab;
+      --line: #2c3037; --accent: #6fa0ff; --warn-bg: #2b2413; --warn-line: #7a6220;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2.5rem 1.25rem 5rem;
+    background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .35rem; }
+  h2 { font-size: 1.2rem; margin: 2.5rem 0 .75rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+  h3 { font-size: 1rem; margin: 1.5rem 0 .5rem; }
+  .sub { color: var(--muted); margin: 0 0 2rem; font-size: .95rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  a { color: var(--accent); }
+  code { background: rgba(128,128,128,.15); padding: .1em .35em; border-radius: 3px; font-size: .9em; }
+  .table-wrap { overflow-x: auto; margin: 1rem 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 34rem; font-size: .94rem; }
+  th, td { text-align: left; padding: .6rem .7rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-weight: 600; }
+  .note {
+    background: var(--warn-bg); border-left: 3px solid var(--warn-line);
+    padding: .9rem 1rem; margin: 1.25rem 0; border-radius: 0 4px 4px 0;
+  }
+  .note p { margin: .4rem 0; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Polityka prywatności — MySancho</h1>
+<p class="sub">Ostatnia aktualizacja: 21 sierpnia 2026</p>
+
+<p>MySancho to aplikacja do dzielenia wspólnych kosztów. Ten dokument opisuje, jakie dane
+aplikacja zbiera, po co, komu je przekazuje i <strong>kto może je zobaczyć</strong>.</p>
+
+<h2>1. Administrator danych</h2>
+<p>Administratorem danych osobowych przetwarzanych w MySancho jest <strong>Artur Baryła</strong>.</p>
+<p>Kontakt w sprawach dotyczących danych: <strong><a href="mailto:artbaryl@gmail.com">artbaryl@gmail.com</a></strong></p>
+
+<h2>2. Jakie dane przechowujemy</h2>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>Kategoria</th><th>Konkretne dane</th><th>Skąd pochodzą</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Konto</td>
+      <td>Adres e-mail, imię lub nazwa wyświetlana, zdjęcie profilowe, identyfikator użytkownika</td>
+      <td>Z Twojego konta Google w momencie logowania</td>
+    </tr>
+    <tr>
+      <td>Grupy</td>
+      <td>Nazwa grupy, opis, zdjęcie okładki, lista uczestników i ich role</td>
+      <td>Od Ciebie i pozostałych uczestników</td>
+    </tr>
+    <tr>
+      <td>Wydatki i rozliczenia</td>
+      <td>Kwoty, waluty, opisy, daty, kategorie, sposób podziału, informacja kto zapłacił i kto jest komu winien, zapisane spłaty</td>
+      <td>Od Ciebie i pozostałych uczestników grupy</td>
+    </tr>
+    <tr>
+      <td>Zdjęcia</td>
+      <td>Zdjęcia paragonów, okładki grup, zdjęcie profilowe</td>
+      <td>Z aparatu lub galerii — wyłącznie te pliki, które sam wskażesz</td>
+    </tr>
+    <tr>
+      <td>Aktywność</td>
+      <td>Komentarze, historia zmian wydatków (kto co zmienił i kiedy)</td>
+      <td>Od Ciebie i pozostałych uczestników</td>
+    </tr>
+    <tr>
+      <td>Dane techniczne</td>
+      <td>Logi serwera: data i godzina zapytania, adres IP, typ operacji, kody błędów</td>
+      <td>Automatycznie, przy każdym połączeniu z serwerem</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p><strong>Czego nie zbieramy:</strong> aplikacja nie pobiera Twojej lokalizacji, listy kontaktów,
+historii połączeń, listy zainstalowanych aplikacji ani zawartości galerii. Nie prosi o żadne
+uprawnienia do zdjęć — wybór pliku odbywa się przez systemowy selektor Androida, który
+przekazuje aplikacji wyłącznie ten jeden wskazany przez Ciebie obraz. Nie prowadzimy
+profilowania reklamowego i nie sprzedajemy danych.</p>
+
+<h2>3. Kto ma dostęp do Twoich danych</h2>
+
+<h3>Pozostali uczestnicy grupy</h3>
+<p>MySancho jest aplikacją współdzieloną — to jej istota. Każda osoba należąca do tej samej grupy
+co Ty widzi:</p>
+<ul>
+  <li>Twoje imię lub nazwę wyświetlaną oraz zdjęcie profilowe,</li>
+  <li>wszystkie dodane przez Ciebie wydatki wraz z kwotami, opisami i datami,</li>
+  <li><strong>zdjęcia paragonów, które wgrałeś</strong>,</li>
+  <li>Twoje saldo — ile jesteś winien i ile są winni Tobie,</li>
+  <li>Twoje komentarze oraz historię wprowadzonych przez Ciebie zmian.</li>
+</ul>
+
+<div class="note">
+  <p><strong>Zanim wgrasz zdjęcie, pomyśl, co jeszcze jest na nim widoczne.</strong></p>
+  <p>Zdjęcie paragonu trafia na serwer i staje się dostępne dla wszystkich uczestników grupy —
+  także tych, którzy dołączą do niej później. Nie da się go „cofnąć" komuś, kto już je zobaczył.</p>
+  <p>Nie fotografuj paragonów razem z dokumentami, kartami płatniczymi, numerami rachunków ani
+  innymi rzeczami, których nie chcesz pokazywać reszcie grupy.</p>
+</div>
+
+<h3>Linki do zdjęć są czasowe, ale działają bez logowania</h3>
+<p>Zdjęcia nie są dostępne pod stałym, publicznym adresem. Aplikacja pobiera je przez link
+generowany na żądanie, ważny przez <strong>1 godzinę</strong>. W tym czasie link działa jak klucz:
+każdy, kto go otrzyma, może pobrać to zdjęcie bez logowania. Po upływie godziny link przestaje
+działać. Nie udostępniaj takich linków dalej.</p>
+
+<h3>Administrator</h3>
+<p>Administrator aplikacji ma techniczny dostęp do bazy danych oraz do magazynu zdjęć —
+jest to niezbędne do utrzymania i naprawy usługi. Dostęp ten nie jest wykorzystywany do
+przeglądania treści użytkowników poza sytuacjami koniecznymi do usunięcia awarii lub
+wypełnienia obowiązku prawnego.</p>
+
+<h3>Osoby spoza grupy</h3>
+<p>Nie mają dostępu do niczego. Wszystkie funkcje serwera wymagają zalogowania, a dane wydatków
+są widoczne wyłącznie w obrębie grupy, do której należysz.</p>
+
+<h2>4. Komu przekazujemy dane</h2>
+
+<p>Korzystamy z usług zewnętrznych dostawców, którzy przetwarzają dane w naszym imieniu:</p>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>Dostawca</th><th>Co otrzymuje</th><th>Po co</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Google (Firebase Authentication)</td>
+      <td>Adres e-mail, podstawowe dane profilu Google</td>
+      <td>Logowanie i weryfikacja tożsamości</td>
+    </tr>
+    <tr>
+      <td>Google Cloud</td>
+      <td>Wszystkie dane aplikacji — konta, grupy, wydatki, rozliczenia</td>
+      <td>Hosting serwera i baza danych</td>
+    </tr>
+    <tr>
+      <td>Cloudflare (R2)</td>
+      <td>Zdjęcia paragonów, okładki grup, zdjęcia profilowe</td>
+      <td>Przechowywanie plików graficznych</td>
+    </tr>
+    <tr>
+      <td>Anthropic</td>
+      <td><strong>Zdjęcie paragonu</strong> — wyłącznie w momencie użycia funkcji skanowania</td>
+      <td>Automatyczne odczytanie pozycji i kwot z paragonu</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="note">
+  <p><strong>Skanowanie paragonów wysyła zdjęcie do firmy Anthropic.</strong></p>
+  <p>Gdy korzystasz z funkcji skanowania, zdjęcie paragonu jest przesyłane do usługi Anthropic
+  (model Claude) w celu rozpoznania widocznego na nim tekstu. Jeśli nie chcesz, aby zdjęcie
+  opuszczało nasz serwer — nie używaj skanowania i wprowadź pozycje ręcznie.</p>
+</div>
+
+<p>Dane mogą być przetwarzane na serwerach poza Europejskim Obszarem Gospodarczym.
+Przekazywanie odbywa się na podstawie standardowych klauzul umownych zatwierdzonych przez
+Komisję Europejską.</p>
+
+<h2>5. Podstawa prawna i cel przetwarzania</h2>
+<ul>
+  <li><strong>Wykonanie umowy</strong> (art. 6 ust. 1 lit. b RODO) — prowadzenie konta, zapisywanie
+  wydatków i wyliczanie sald. Bez tych danych aplikacja nie może działać.</li>
+  <li><strong>Prawnie uzasadniony interes</strong> (art. 6 ust. 1 lit. f RODO) — logi serwera,
+  potrzebne do zapewnienia bezpieczeństwa i diagnozowania awarii.</li>
+</ul>
+
+<h2>6. Jak długo przechowujemy dane</h2>
+<ul>
+  <li>Dane konta i treści — do momentu usunięcia konta przez Ciebie.</li>
+  <li>Logi serwera — do 30 dni.</li>
+  <li>Wydatki dodane przez Ciebie w grupie pozostają widoczne dla pozostałych uczestników również
+  po usunięciu Twojego konta, ponieważ stanowią część wspólnego rozliczenia. Są jednak
+  odłączane od Twoich danych osobowych.</li>
+</ul>
+
+<h2>7. Twoje prawa</h2>
+<p>Zgodnie z RODO przysługuje Ci prawo do:</p>
+<ul>
+  <li>dostępu do swoich danych i otrzymania ich kopii,</li>
+  <li>sprostowania danych nieprawidłowych,</li>
+  <li>usunięcia danych („prawo do bycia zapomnianym"),</li>
+  <li>ograniczenia przetwarzania,</li>
+  <li>przenoszenia danych,</li>
+  <li>wniesienia sprzeciwu wobec przetwarzania.</li>
+</ul>
+<p>Aby skorzystać z któregokolwiek z tych praw, napisz na adres podany w punkcie 1.
+Przysługuje Ci również prawo wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych
+(ul. Stawki 2, 00-193 Warszawa).</p>
+
+<h2>8. Usunięcie konta</h2>
+<p>Konto możesz usunąć bezpośrednio w aplikacji, w ustawieniach profilu. Usunięcie konta kasuje
+Twoje dane profilowe oraz wgrane przez Ciebie zdjęcia. Możesz też poprosić o usunięcie konta
+mailowo, pisząc na adres z punktu 1 — realizujemy takie zgłoszenia w ciągu 30 dni.</p>
+
+<h2>9. Dzieci</h2>
+<p>Aplikacja nie jest przeznaczona dla osób poniżej 13. roku życia i nie zbieramy świadomie ich
+danych. Jeśli dowiemy się, że takie dane trafiły do aplikacji, usuniemy je.</p>
+
+<h2>10. Zmiany polityki</h2>
+<p>Jeśli zmienimy zakres zbieranych danych lub listę dostawców, zaktualizujemy ten dokument
+i zmienimy datę na górze strony. Przy istotnych zmianach poinformujemy w aplikacji.</p>
+
+<footer>
+  MySancho — polityka prywatności. Kontakt: <strong><a href="mailto:artbaryl@gmail.com">artbaryl@gmail.com</a></strong>
+</footer>
+
+</main>
+</body>
+</html>
