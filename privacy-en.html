@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — MySancho</title>
+<link rel="alternate" hreflang="pl" href="https://arturbaryla.github.io/mysancho-legal/">
+<link rel="alternate" hreflang="en" href="https://arturbaryla.github.io/mysancho-legal/privacy-en.html">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+<nav class="langbar" aria-label="Language">
+  <a href="./" hreflang="pl">Polski</a>
+  <a href="privacy-en.html" aria-current="page">English</a>
+</nav>
+
+<h1>Privacy Policy — MySancho</h1>
+<p class="sub">Last updated: 22 August 2026</p>
+<p class="docnav">Looking for the rules of use? <a href="terms-en.html">Terms of Service</a></p>
+
+<p>MySancho is an app for splitting shared costs. This document explains what data the app
+collects, why, who it is shared with, and <strong>who can see it</strong>.</p>
+
+<div class="note">
+  <p>This is a translation provided for convenience. In case of any discrepancy, the
+  <a href="./">Polish version</a> prevails.</p>
+</div>
+
+<h2>1. Data controller</h2>
+<p>The controller of personal data processed in MySancho is <strong>Artur Baryła</strong>.</p>
+<p>Contact for data matters: <strong><a href="mailto:artbaryl@gmail.com">artbaryl@gmail.com</a></strong></p>
+
+<h2>2. What data we store</h2>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>Category</th><th>Specific data</th><th>Where it comes from</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Account</td>
+      <td>Email address, first name or display name, profile picture, user identifier</td>
+      <td>From your Google account when you sign in</td>
+    </tr>
+    <tr>
+      <td>Groups</td>
+      <td>Group name, description, cover photo, list of members and their roles</td>
+      <td>From you and the other members</td>
+    </tr>
+    <tr>
+      <td>Expenses and settlements</td>
+      <td>Amounts, currencies, descriptions, dates, categories, how a cost was split, who paid and who owes whom, recorded repayments</td>
+      <td>From you and the other members of the group</td>
+    </tr>
+    <tr>
+      <td>Photos</td>
+      <td>Receipt photos, group covers, profile picture</td>
+      <td>From the camera or gallery — only the files you select yourself</td>
+    </tr>
+    <tr>
+      <td>Activity</td>
+      <td>Comments, edit history of expenses (who changed what and when)</td>
+      <td>From you and the other members</td>
+    </tr>
+    <tr>
+      <td>Technical data</td>
+      <td>Server logs: date and time of the request, IP address, operation type, error codes</td>
+      <td>Automatically, on every connection to the server</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p><strong>What we do not collect:</strong> the app does not read your location, contacts, call
+history, list of installed apps, or the contents of your gallery. It requests no photo
+permissions — file selection goes through the Android system picker, which hands the app only
+the single image you point at. We do not run advertising profiling and we do not sell data.</p>
+
+<h2>3. Who has access to your data</h2>
+
+<h3>The other members of your group</h3>
+<p>MySancho is a shared app — that is the whole point of it. Everyone who belongs to the same
+group as you can see:</p>
+<ul>
+  <li>your first name or display name and your profile picture,</li>
+  <li>every expense you have added, along with amounts, descriptions and dates,</li>
+  <li><strong>the receipt photos you have uploaded</strong>,</li>
+  <li>your balance — how much you owe and how much is owed to you,</li>
+  <li>your comments and the history of the changes you have made.</li>
+</ul>
+
+<div class="note">
+  <p><strong>Before you upload a photo, consider what else is visible in it.</strong></p>
+  <p>A receipt photo goes to the server and becomes available to every member of the group —
+  including people who join later. There is no way to "un-show" it to someone who has already
+  seen it.</p>
+  <p>Do not photograph receipts together with documents, payment cards, account numbers or
+  anything else you would rather not show to the rest of the group.</p>
+</div>
+
+<h3>Photo links are temporary, but work without signing in</h3>
+<p>Photos are not available at a fixed, public address. The app fetches them through a link
+generated on demand and valid for <strong>1 hour</strong>. During that time the link acts as a
+key: anyone who receives it can download that photo without signing in. After an hour the link
+stops working. Do not pass such links on.</p>
+
+<h3>The administrator</h3>
+<p>The app's administrator has technical access to the database and to the photo storage — this
+is necessary to keep the service running and to fix it. That access is not used to browse user
+content except where required to resolve a failure or to comply with a legal obligation.</p>
+
+<h3>People outside the group</h3>
+<p>They have access to nothing. Every server function requires authentication, and expense data
+is visible only within the group you belong to.</p>
+
+<h2>4. Who we share data with</h2>
+
+<p>We use external providers that process data on our behalf:</p>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>Provider</th><th>What it receives</th><th>What for</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Google (Firebase Authentication)</td>
+      <td>Email address, basic Google profile data</td>
+      <td>Sign-in and identity verification</td>
+    </tr>
+    <tr>
+      <td>Google Cloud</td>
+      <td>All application data — accounts, groups, expenses, settlements</td>
+      <td>Server hosting and database</td>
+    </tr>
+    <tr>
+      <td>Cloudflare (R2)</td>
+      <td>Receipt photos, group covers, profile pictures</td>
+      <td>Image file storage</td>
+    </tr>
+    <tr>
+      <td>Anthropic</td>
+      <td><strong>The receipt photo</strong> — only at the moment you use the scanning feature</td>
+      <td>Automatic reading of line items and amounts from the receipt</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="note">
+  <p><strong>Receipt scanning sends the photo to Anthropic.</strong></p>
+  <p>When you use the scanning feature, the receipt photo is sent to the Anthropic service
+  (the Claude model) to recognise the text visible on it. If you do not want the photo to leave
+  our server — do not use scanning, and enter the items manually.</p>
+</div>
+
+<p>Data may be processed on servers outside the European Economic Area. Such transfers are made
+on the basis of Standard Contractual Clauses approved by the European Commission.</p>
+
+<h2>5. Legal basis and purpose of processing</h2>
+<ul>
+  <li><strong>Performance of a contract</strong> (Art. 6(1)(b) GDPR) — maintaining your account,
+  recording expenses and calculating balances. Without this data the app cannot work.</li>
+  <li><strong>Legitimate interest</strong> (Art. 6(1)(f) GDPR) — server logs, needed to keep the
+  service secure and to diagnose failures.</li>
+</ul>
+
+<h2>6. How long we keep data</h2>
+<ul>
+  <li>Account data and content — until you delete your account.</li>
+  <li>Server logs — up to 30 days.</li>
+  <li>Expenses you added to a group remain visible to the other members even after you delete
+  your account, because they are part of a shared settlement. They are, however, detached from
+  your personal data.</li>
+</ul>
+
+<h2>7. Your rights</h2>
+<p>Under the GDPR you have the right to:</p>
+<ul>
+  <li>access your data and obtain a copy of it,</li>
+  <li>rectify inaccurate data,</li>
+  <li>erase your data (the "right to be forgotten"),</li>
+  <li>restrict processing,</li>
+  <li>data portability,</li>
+  <li>object to processing.</li>
+</ul>
+<p>To exercise any of these rights, write to the address given in section 1. You also have the
+right to lodge a complaint with the President of the Personal Data Protection Office
+(ul. Stawki 2, 00-193 Warsaw, Poland).</p>
+
+<h2>8. Deleting your account</h2>
+<p>You can delete your account directly in the app, in the profile settings. Deleting the account
+erases your profile data and the photos you uploaded. You can also request deletion by email at
+the address in section 1 — we handle such requests within 30 days.</p>
+
+<h2>9. Children</h2>
+<p>The app is not intended for people under 13 years of age and we do not knowingly collect their
+data. If we learn that such data has reached the app, we will delete it.</p>
+
+<h2>10. Changes to this policy</h2>
+<p>If we change the scope of the data we collect or the list of providers, we will update this
+document and change the date at the top of the page. For material changes we will notify you in
+the app.</p>
+
+<footer>
+  MySancho — privacy policy. Contact: <strong><a href="mailto:artbaryl@gmail.com">artbaryl@gmail.com</a></strong><br>
+  <a href="terms-en.html">Terms of Service</a> · <a href="./">Wersja polska</a>
+</footer>
+
+</main>
+</body>
+</html>
