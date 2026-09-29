@@ -17,7 +17,7 @@
 </nav>
 
 <h1>Polityka prywatności — MySancho</h1>
-<p class="sub">Ostatnia aktualizacja: 22 sierpnia 2026</p>
+<p class="sub">Ostatnia aktualizacja: 29 września 2026</p>
 <p class="docnav">Szukasz zasad korzystania z aplikacji? <a href="terms.html">Regulamin aplikacji</a></p>
 
 <p>MySancho to aplikacja do dzielenia wspólnych kosztów. Ten dokument opisuje, jakie dane
@@ -61,6 +61,11 @@ aplikacja zbiera, po co, komu je przekazuje i <strong>kto może je zobaczyć</st
       <td>Od Ciebie i pozostałych uczestników</td>
     </tr>
     <tr>
+      <td>Zgłoszenia i blokady</td>
+      <td>Zgłoszenia: kto zgłosił, co zostało zgłoszone (kopia treści, a przy zdjęciu — kopia pliku), powód i opis. Blokady: kogo zablokowałeś. Zawieszenia kont: powód i okres</td>
+      <td>Od zgłaszającego lub blokującego; zawieszenia — od administratora</td>
+    </tr>
+    <tr>
       <td>Dane techniczne</td>
       <td>Logi serwera: data i godzina zapytania, adres IP, typ operacji, kody błędów</td>
       <td>Automatycznie, przy każdym połączeniu z serwerem</td>
@@ -102,11 +107,15 @@ generowany na żądanie, ważny przez <strong>1 godzinę</strong>. W tym czasie 
 każdy, kto go otrzyma, może pobrać to zdjęcie bez logowania. Po upływie godziny link przestaje
 działać. Nie udostępniaj takich linków dalej.</p>
 
+<h3>Zgłoszenia i blokady</h3>
+<p>Zgłoszenie widzi wyłącznie administrator. Autor zgłoszonej treści nie dowiaduje się, kto ją
+zgłosił. Blokadę widzisz tylko Ty — zablokowana osoba nie jest o niej informowana.</p>
+
 <h3>Administrator</h3>
 <p>Administrator aplikacji ma techniczny dostęp do bazy danych oraz do magazynu zdjęć —
 jest to niezbędne do utrzymania i naprawy usługi. Dostęp ten nie jest wykorzystywany do
-przeglądania treści użytkowników poza sytuacjami koniecznymi do usunięcia awarii lub
-wypełnienia obowiązku prawnego.</p>
+przeglądania treści użytkowników poza sytuacjami koniecznymi do usunięcia awarii,
+rozpatrzenia zgłoszenia naruszenia regulaminu lub wypełnienia obowiązku prawnego.</p>
 
 <h3>Osoby spoza grupy</h3>
 <p>Nie mają dostępu do niczego. Wszystkie funkcje serwera wymagają zalogowania, a dane wydatków
@@ -134,7 +143,7 @@ są widoczne wyłącznie w obrębie grupy, do której należysz.</p>
     </tr>
     <tr>
       <td>Cloudflare (R2)</td>
-      <td>Zdjęcia paragonów, okładki grup, zdjęcia profilowe</td>
+      <td>Zdjęcia paragonów, okładki grup, zdjęcia profilowe, kopie zgłoszonych zdjęć</td>
       <td>Przechowywanie plików graficznych</td>
     </tr>
     <tr>
@@ -163,6 +172,9 @@ Komisję Europejską.</p>
   wydatków i wyliczanie sald. Bez tych danych aplikacja nie może działać.</li>
   <li><strong>Prawnie uzasadniony interes</strong> (art. 6 ust. 1 lit. f RODO) — logi serwera,
   potrzebne do zapewnienia bezpieczeństwa i diagnozowania awarii.</li>
+  <li><strong>Prawnie uzasadniony interes</strong> (art. 6 ust. 1 lit. f RODO) — rozpatrywanie
+  zgłoszeń, blokady i zawieszanie kont, czyli ochrona użytkowników przed treściami
+  i zachowaniami naruszającymi regulamin.</li>
 </ul>
 
 <h2>6. Jak długo przechowujemy dane</h2>
@@ -173,6 +185,13 @@ Komisję Europejską.</p>
   w grupie pozostają widoczne dla pozostałych uczestników również po usunięciu Twojego konta,
   ponieważ stanowią część wspólnego rozliczenia. Są jednak odłączane od Twoich danych osobowych
   i figurują przy anonimowym identyfikatorze. Szczegóły w punkcie 8.</li>
+  <li>Zgłoszenia wraz z kopią zgłoszonej treści lub zdjęcia — przez czas rozpatrywania
+  zgłoszenia, a po jego zamknięciu tak długo, jak to niezbędne do rozpatrzenia odwołania lub
+  obrony przed roszczeniami. Kopia zostaje, nawet jeśli autor usunie treść lub konto — inaczej
+  usunięcie zgłoszonej treści niszczyłoby dowód.</li>
+  <li>Historia zawieszeń konta — na tych samych zasadach co zgłoszenia; pozwala ocenić, czy
+  naruszenie się powtarza.</li>
+  <li>Blokady — dopóki ich nie zdejmiesz.</li>
 </ul>
 
 <h2>7. Twoje prawa</h2>
@@ -197,7 +216,8 @@ mailowo, pisząc na adres z punktu 1 — realizujemy takie zgłoszenia w ciągu 
 <ul>
   <li>adres e-mail,</li>
   <li>nazwa wyświetlana — zastępowana anonimowym identyfikatorem,</li>
-  <li>zdjęcie profilowe — kasowane z magazynu plików,</li>
+  <li>zdjęcie profilowe — kasowane z magazynu plików (jeśli ktoś je wcześniej zgłosił, jego
+  kopia zostaje w zgłoszeniu — punkt 6),</li>
   <li>tag Revolut, jeśli był podany,</li>
   <li>konto logowania — dostęp do aplikacji przestaje działać od razu.</li>
 </ul>
@@ -208,6 +228,9 @@ mailowo, pisząc na adres z punktu 1 — realizujemy takie zgłoszenia w ciągu 
   <li><strong>zdjęcia paragonów, które wgrałeś</strong>,</li>
   <li>Twoje komentarze.</li>
 </ul>
+
+<p>Poza grupami zostają też zgłoszenia i zawieszenia dotyczące Twojego konta — na zasadach
+z punktu 6.</p>
 
 <div class="note">
   <p><strong>Dlaczego te dane zostają.</strong> Wydatki i paragony są częścią wspólnego rozliczenia
