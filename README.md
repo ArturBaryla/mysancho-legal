@@ -63,11 +63,9 @@ większej zmianie w aplikacji:
   konta. Ceny celowo **nie** są w regulaminie — widać je w aplikacji i w oknie zakupu Google
   Play. Gdy zmienią się plany, zasady odnowienia albo okres ważności dokupienia, popraw punkt 7
   razem z `docs/subscriptions.md` w repo backendu.
-- **Sprzedawca.** Punkt 1 nie mówi już „osoba fizyczna, projekt niekomercyjny”, ale dane
-  sprzedawcy (firma, adres, NIP) **nie są jeszcze uzupełnione** — zależą od odpowiedzi
-  księgowej, czy sprzedaż pójdzie przez działalność gospodarczą. Zmiany z 2026-10-14 zostały
-  opublikowane mimo to, decyzją właściciela, bez czekania na księgową — do tematu trzeba wrócić
-  (lista niżej).
+- **Sprzedawca.** Punkt 1 regulaminu i polityki podaje dziś tylko nazwę firmy „Art Technology”
+  i e-mail kontaktowy — taka jest decyzja właściciela. Czy to wystarcza wobec obowiązków
+  informacyjnych wobec konsumenta, ma ocenić prawnik (lista niżej).
 
 ## Do zrobienia przed otwarciem aplikacji dla realnych użytkowników
 
@@ -82,9 +80,9 @@ Dokumenty **nie były opiniowane przez prawnika**. Zanim aplikacja wyjdzie poza 
    - polityka: podstawy prawne (punkt 5), okresy przechowywania danych o zakupach (punkt 6),
      przekazywanie danych poza EOG (RevenueCat, Anthropic — punkt 4), usuwanie danych
      w RevenueCat i w grupach (punkt 8).
-2. **Dane sprzedawcy w punkcie 1 regulaminu** (firma, adres, NIP) po odpowiedzi księgowej.
-   Księgowa ma też rozstrzygnąć okres przechowywania danych o zakupach (polityka mówi „przez
-   czas wymagany przepisami”).
+2. **Zakres danych sprzedawcy w punkcie 1 regulaminu i polityki** — czy sama nazwa firmy i
+   e-mail wystarczają, czy trzeba dopisać więcej. Księgowa ma też rozstrzygnąć okres
+   przechowywania danych o zakupach (polityka mówi „przez czas wymagany przepisami”).
 3. **Spójność z Play Console:** formularz *Bezpieczeństwo danych* wg `docs/play-data-safety.md`
    w repo aplikacji, adres kontaktowy w karcie sklepu taki sam jak w dokumentach
    (`mysancho.support@gmail.com`).
