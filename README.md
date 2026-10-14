@@ -63,8 +63,8 @@ większej zmianie w aplikacji:
   konta. Ceny celowo **nie** są w regulaminie — widać je w aplikacji i w oknie zakupu Google
   Play. Gdy zmienią się plany, zasady odnowienia albo okres ważności dokupienia, popraw punkt 7
   razem z `docs/subscriptions.md` w repo backendu.
-- **Sprzedawca.** Punkt 1 regulaminu i polityki podaje dziś tylko nazwę firmy „Art Technology”
-  i e-mail kontaktowy — taka jest decyzja właściciela. Czy to wystarcza wobec obowiązków
+- **Sprzedawca.** Punkt 1 regulaminu i polityki podaje dziś tylko „Art Technology — Artur Baryła”
+  i e-mail kontaktowy — taka jest decyzja właściciela (pełne dane firmy i adres są w sklepach). Czy to wystarcza wobec obowiązków
   informacyjnych wobec konsumenta, ma ocenić prawnik (lista niżej).
 
 ## Do zrobienia przed otwarciem aplikacji dla realnych użytkowników
