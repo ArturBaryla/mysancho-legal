@@ -41,12 +41,11 @@ bezpośrednio do wersji zgodnej z ustawionym w niej językiem.
 
 **Polityka prywatności** opisuje **rzeczywiste** zachowanie aplikacji: jakie dane trafiają
 na serwer, kto je widzi i którym firmom są przekazywane (Google, Google Play, RevenueCat,
-Cloudflare R2, Anthropic). Przy migracji hostingu (Google Cloud, Cloudflare → DigitalOcean)
-zmień tabelę dostawców w punkcie 4. Odpowiedzi do formularza *Bezpieczeństwo danych* są
-w repo aplikacji: `docs/play-data-safety.md`.
-Rozjazd między tym dokumentem a tym, co apka faktycznie robi, jest jednym z częstszych
-powodów odrzucenia przez Google Play — a przy danych finansowych i zdjęciach potrafi
-skończyć się zdjęciem aplikacji ze Sklepu.
+Cloudflare R2, Anthropic). Rozjazd między tym dokumentem a tym, co apka faktycznie robi,
+jest jednym z częstszych powodów odrzucenia przez Google Play — a przy danych finansowych
+i zdjęciach potrafi skończyć się zdjęciem aplikacji ze Sklepu. Przy migracji hostingu
+(Google Cloud, Cloudflare → DigitalOcean) zmień tabelę dostawców w punkcie 4. Odpowiedzi do
+formularza *Bezpieczeństwo danych* są w repo aplikacji: `docs/play-data-safety.md`.
 
 Zmieniasz zakres zbieranych danych albo dokładasz zewnętrznego dostawcę? Zaktualizuj
 ten dokument **i** formularz *Bezpieczeństwo danych* w Play Console, a na górze strony
@@ -65,11 +64,30 @@ większej zmianie w aplikacji:
   Play. Gdy zmienią się plany, zasady odnowienia albo okres ważności dokupienia, popraw punkt 7
   razem z `docs/subscriptions.md` w repo backendu.
 - **Sprzedawca.** Punkt 1 nie mówi już „osoba fizyczna, projekt niekomercyjny”, ale dane
-  sprzedawcy (firma, adres, NIP) trzeba uzupełnić, jeśli sprzedaż pójdzie przez działalność
-  gospodarczą — decyzja po odpowiedzi księgowej. W `terms.html` i `terms-en.html` jest o tym
-  komentarz `TODO` w HTML. **Nie publikuj tych zmian na produkcję, dopóki to nie jest
-  rozstrzygnięte.**
+  sprzedawcy (firma, adres, NIP) **nie są jeszcze uzupełnione** — zależą od odpowiedzi
+  księgowej, czy sprzedaż pójdzie przez działalność gospodarczą. W `terms.html` i
+  `terms-en.html` jest o tym komentarz `TODO` w HTML. Zmiany z 2026-10-14 zostały opublikowane
+  mimo to, decyzją właściciela, bez czekania na księgową — do tematu trzeba wrócić (lista niżej).
 
-> Te dokumenty nie są opiniowane przez prawnika. Przed wejściem na produkcję z realnymi
-> użytkownikami warto je dać do przejrzenia komuś, kto się na tym zna — zwłaszcza punkty
-> 9 (odpowiedzialność) i 11 (reklamacje).
+## Do zrobienia przed otwarciem aplikacji dla realnych użytkowników
+
+Dokumenty **nie były opiniowane przez prawnika**. Zanim aplikacja wyjdzie poza zamknięty test:
+
+1. **Przegląd prawnika: regulamin i polityka prywatności (RODO), po polsku** (angielska to
+   tłumaczenie). Szczególnie:
+   - regulamin: punkt 7 (abonament, odnowienie automatyczne, zmiana planu, zwroty, prawo
+     odstąpienia od umowy przy treściach cyfrowych — Google Play pisze o utracie prawa
+     odstąpienia „z wyjątkiem usług”), punkt 9 (odpowiedzialność), punkt 11 (reklamacje),
+     punkt 10 (zawieszanie kont);
+   - polityka: podstawy prawne (punkt 5), okresy przechowywania danych o zakupach (punkt 6),
+     przekazywanie danych poza EOG (RevenueCat, Anthropic — punkt 4), usuwanie danych
+     w RevenueCat i w grupach (punkt 8).
+2. **Dane sprzedawcy w punkcie 1 regulaminu** (firma, adres, NIP) po odpowiedzi księgowej;
+   usuń wtedy komentarze `TODO` z HTML. Księgowa ma też rozstrzygnąć okres przechowywania
+   danych o zakupach (polityka mówi „przez czas wymagany przepisami”).
+3. **Spójność z Play Console:** formularz *Bezpieczeństwo danych* wg `docs/play-data-safety.md`
+   w repo aplikacji, adres kontaktowy w karcie sklepu taki sam jak w dokumentach
+   (`mysancho.support@gmail.com`).
+4. **Po migracji na DigitalOcean:** zmień tabelę dostawców (punkt 4 polityki) i podbij daty.
+5. **Luki w backendzie opisane w dokumentach** — zob. `docs/TODO.md` w repo backendu
+   (usuwanie klienta w RevenueCat przy usuwaniu konta, czyszczenie danych zakupów).
