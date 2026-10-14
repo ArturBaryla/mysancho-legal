@@ -40,7 +40,10 @@ bezpośrednio do wersji zgodnej z ustawionym w niej językiem.
 ## Zanim coś tu zmienisz
 
 **Polityka prywatności** opisuje **rzeczywiste** zachowanie aplikacji: jakie dane trafiają
-na serwer, kto je widzi i którym firmom są przekazywane (Google, Cloudflare R2, Anthropic).
+na serwer, kto je widzi i którym firmom są przekazywane (Google, Google Play, RevenueCat,
+Cloudflare R2, Anthropic). Przy migracji hostingu (Google Cloud, Cloudflare → DigitalOcean)
+zmień tabelę dostawców w punkcie 4. Odpowiedzi do formularza *Bezpieczeństwo danych* są
+w repo aplikacji: `docs/play-data-safety.md`.
 Rozjazd między tym dokumentem a tym, co apka faktycznie robi, jest jednym z częstszych
 powodów odrzucenia przez Google Play — a przy danych finansowych i zdjęciach potrafi
 skończyć się zdjęciem aplikacji ze Sklepu.
@@ -56,9 +59,16 @@ większej zmianie w aplikacji:
   poza aplikacją. Gdyby to się kiedyś zmieniło (własne płatności, escrow, cokolwiek
   dotykające cudzych środków), regulamin wymaga przepisania od zera, a usługa najpewniej
   wchodzi pod przepisy o usługach płatniczych.
-- **Tickety są darmowe i niekupowalne.** Punkt 7 mówi to wprost. Uruchomienie sprzedaży
-  wymaga dopisania zasad zakupu, płatności i prawa odstąpienia — konsument kupujący treść
-  cyfrową ma 14 dni, chyba że świadomie z tego prawa zrezygnuje.
+- **Tokeny (dawniej tickety) są płatne tylko przez Google Play.** Od 2026-10-14 punkt 7
+  opisuje abonament (Plan 20 / 50 / 100), dokupienie, zmianę planu, zwroty i skutki usunięcia
+  konta. Ceny celowo **nie** są w regulaminie — widać je w aplikacji i w oknie zakupu Google
+  Play. Gdy zmienią się plany, zasady odnowienia albo okres ważności dokupienia, popraw punkt 7
+  razem z `docs/subscriptions.md` w repo backendu.
+- **Sprzedawca.** Punkt 1 nie mówi już „osoba fizyczna, projekt niekomercyjny”, ale dane
+  sprzedawcy (firma, adres, NIP) trzeba uzupełnić, jeśli sprzedaż pójdzie przez działalność
+  gospodarczą — decyzja po odpowiedzi księgowej. W `terms.html` i `terms-en.html` jest o tym
+  komentarz `TODO` w HTML. **Nie publikuj tych zmian na produkcję, dopóki to nie jest
+  rozstrzygnięte.**
 
 > Te dokumenty nie są opiniowane przez prawnika. Przed wejściem na produkcję z realnymi
 > użytkownikami warto je dać do przejrzenia komuś, kto się na tym zna — zwłaszcza punkty

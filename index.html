@@ -17,7 +17,7 @@
 </nav>
 
 <h1>Polityka prywatności — MySancho</h1>
-<p class="sub">Ostatnia aktualizacja: 4 października 2026</p>
+<p class="sub">Ostatnia aktualizacja: 14 października 2026</p>
 <p class="docnav">Szukasz zasad korzystania z aplikacji? <a href="terms.html">Regulamin aplikacji</a></p>
 
 <p>MySancho to aplikacja do dzielenia wspólnych kosztów. Ten dokument opisuje, jakie dane
@@ -61,6 +61,11 @@ aplikacja zbiera, po co, komu je przekazuje i <strong>kto może je zobaczyć</st
       <td>Od Ciebie i pozostałych uczestników</td>
     </tr>
     <tr>
+      <td>Zakupy i abonament</td>
+      <td>Wybrany plan i jego status (aktywny, anulowany, wygasły), daty zakupu i odnowienia, kupione dokupienia tokenów, kwota i waluta płatności, identyfikator zakupu w sklepie, saldo tokenów i terminy ich ważności. <strong>Nie otrzymujemy numeru karty ani innych danych płatniczych</strong></td>
+      <td>Ze sklepu Google Play (przez RevenueCat) po dokonaniu zakupu; saldo tokenów — z naszego serwera</td>
+    </tr>
+    <tr>
       <td>Zgłoszenia i blokady</td>
       <td>Zgłoszenia: kto zgłosił, co zostało zgłoszone (kopia treści, a przy zdjęciu — kopia pliku; zdjęcie profilowe lub okładkę grupy kopiujemy tylko wtedy, gdy powód zgłoszenia może dotyczyć obrazu, a nie np. przy spamie czy nękaniu), powód i opis. Blokady: kogo zablokowałeś. Zawieszenia kont: powód i okres</td>
       <td>Od zgłaszającego lub blokującego; zawieszenia — od administratora</td>
@@ -75,7 +80,8 @@ aplikacja zbiera, po co, komu je przekazuje i <strong>kto może je zobaczyć</st
 </div>
 
 <p><strong>Czego nie zbieramy:</strong> aplikacja nie pobiera Twojej lokalizacji, listy kontaktów,
-historii połączeń, listy zainstalowanych aplikacji ani zawartości galerii. Nie prosi o żadne
+historii połączeń, listy zainstalowanych aplikacji ani zawartości galerii. Nie widzimy numeru
+Twojej karty ani rachunku bankowego — płatność przeprowadza Google Play. Nie prosi o żadne
 uprawnienia do zdjęć — wybór pliku odbywa się przez systemowy selektor Androida, który
 przekazuje aplikacji wyłącznie ten jeden wskazany przez Ciebie obraz. Nie prowadzimy
 profilowania reklamowego i nie sprzedajemy danych.</p>
@@ -92,6 +98,8 @@ co Ty widzi:</p>
   <li>Twoje saldo — ile jesteś winien i ile są winni Tobie,</li>
   <li>Twoje komentarze oraz historię wprowadzonych przez Ciebie zmian.</li>
 </ul>
+<p>Pozostali uczestnicy grupy <strong>nie widzą</strong> Twoich zakupów, abonamentu ani salda
+tokenów.</p>
 
 <div class="note">
   <p><strong>Zanim wgrasz zdjęcie, pomyśl, co jeszcze jest na nim widoczne.</strong></p>
@@ -151,6 +159,16 @@ są widoczne wyłącznie w obrębie grupy, do której należysz.</p>
       <td><strong>Zdjęcie paragonu</strong> — wyłącznie w momencie użycia funkcji skanowania</td>
       <td>Automatyczne odczytanie pozycji i kwot z paragonu</td>
     </tr>
+    <tr>
+      <td>Google (Google Play)</td>
+      <td>Dane płatności i konta Google, które podajesz przy zakupie (przetwarza je Google, nie my)</td>
+      <td>Przeprowadzenie płatności za abonament i dokupienie tokenów</td>
+    </tr>
+    <tr>
+      <td>RevenueCat, Inc.</td>
+      <td>Identyfikator użytkownika w aplikacji, informacje o zakupach i abonamencie oraz dane techniczne zapytań (m.in. adres IP)</td>
+      <td>Obsługa abonamentów: weryfikacja zakupów, zarządzanie planami i przekazanie nam informacji o zakupie</td>
+    </tr>
   </tbody>
 </table>
 </div>
@@ -170,6 +188,10 @@ Komisję Europejską.</p>
 <ul>
   <li><strong>Wykonanie umowy</strong> (art. 6 ust. 1 lit. b RODO) — prowadzenie konta, zapisywanie
   wydatków i wyliczanie sald. Bez tych danych aplikacja nie może działać.</li>
+  <li><strong>Wykonanie umowy</strong> (art. 6 ust. 1 lit. b RODO) — obsługa zakupu abonamentu
+  lub dokupienia tokenów: przyznanie tokenów, odnowienia, zmiana planu, zwroty.</li>
+  <li><strong>Obowiązek prawny</strong> (art. 6 ust. 1 lit. c RODO) — przechowywanie danych
+  o zakupach przez czas wymagany przepisami podatkowymi i rachunkowymi.</li>
   <li><strong>Prawnie uzasadniony interes</strong> (art. 6 ust. 1 lit. f RODO) — logi serwera,
   potrzebne do zapewnienia bezpieczeństwa i diagnozowania awarii.</li>
   <li><strong>Prawnie uzasadniony interes</strong> (art. 6 ust. 1 lit. f RODO) — rozpatrywanie
@@ -181,6 +203,9 @@ Komisję Europejską.</p>
 <ul>
   <li>Dane profilowe (e-mail, nazwa, zdjęcie profilowe) — do momentu usunięcia konta.</li>
   <li>Logi serwera — do 30 dni.</li>
+  <li>Dane o zakupach i abonamencie (plan, daty, kwoty, identyfikatory transakcji) — przez czas
+  wymagany przepisami podatkowymi i rachunkowymi. Po usunięciu konta zostają w postaci powiązanej
+  wyłącznie z anonimowym identyfikatorem (punkt 8).</li>
   <li>Wydatki, rozliczenia, komentarze i <strong>zdjęcia paragonów</strong> dodane przez Ciebie
   w grupie pozostają widoczne dla pozostałych uczestników również po usunięciu Twojego konta,
   ponieważ stanowią część wspólnego rozliczenia. Są jednak odłączane od Twoich danych osobowych
@@ -232,7 +257,15 @@ mailowo, pisząc na adres z punktu 1 — realizujemy takie zgłoszenia w ciągu 
 </ul>
 
 <p>Poza grupami zostają też zgłoszenia i zawieszenia dotyczące Twojego konta — na zasadach
-z punktu 6.</p>
+z punktu 6 — oraz dane o zakupach, powiązane już tylko z anonimowym identyfikatorem (punkt 6).
+W RevenueCat zostaje rekord klienta z tym samym identyfikatorem; na Twoją prośbę, wysłaną na adres
+z punktu 1, usuniemy go również tam.</p>
+
+<div class="note">
+  <p><strong>Usunięcie konta nie anuluje abonamentu.</strong> Subskrypcją zarządza Google Play —
+  jeśli ją masz, anuluj ją w Google Play (Płatności i subskrypcje → Subskrypcje), inaczej opłaty
+  będą pobierane dalej. Niewykorzystane tokeny przepadają razem z kontem.</p>
+</div>
 
 <div class="note">
   <p><strong>Dlaczego te dane zostają.</strong> Wydatki i paragony są częścią wspólnego rozliczenia

@@ -17,7 +17,7 @@
 </nav>
 
 <h1>Regulamin aplikacji MySancho</h1>
-<p class="sub">Ostatnia aktualizacja: 29 września 2026</p>
+<p class="sub">Ostatnia aktualizacja: 14 października 2026</p>
 <p class="docnav">Szukasz informacji o danych osobowych? <a href="./">Polityka prywatności</a></p>
 
 <p>Ten regulamin określa zasady korzystania z aplikacji MySancho. Zaczyna obowiązywać w chwili
@@ -25,10 +25,13 @@ założenia konta. Jeśli nie zgadzasz się z którymkolwiek z poniższych punkt
 albo usuń istniejące.</p>
 
 <h2>1. Kto świadczy usługę</h2>
-<p>Aplikację MySancho udostępnia <strong>Artur Baryła</strong>, osoba fizyczna, jako projekt
-niekomercyjny.</p>
+<!-- TODO przed produkcją: dane sprzedawcy (firma, adres, NIP) po odpowiedzi księgowej, jeśli
+     sprzedaż ma iść przez działalność gospodarczą; do tego czasu nie publikować na produkcji. -->
+<p>Aplikację MySancho udostępnia <strong>Artur Baryła</strong>.</p>
 <p>Kontakt: <strong><a href="mailto:artbaryl@gmail.com">artbaryl@gmail.com</a></strong></p>
-<p>Korzystanie z aplikacji jest bezpłatne. Nie wyświetlamy reklam i nie sprzedajemy danych.</p>
+<p>Podstawowe korzystanie z aplikacji — konto, grupy, wydatki i rozliczenia — jest bezpłatne.
+Skanowanie paragonów wymaga tokenów, z których część jest płatna (punkt 7). Nie wyświetlamy
+reklam i nie sprzedajemy danych.</p>
 
 <h2>2. Czym MySancho jest, a czym nie jest</h2>
 
@@ -129,17 +132,62 @@ z zastrzeżeniem punktu 6 oraz kopii zachowywanych na potrzeby zgłoszeń (punkt
   <a href="./">polityce prywatności</a>.</li>
 </ul>
 
-<h2>7. Skanowanie paragonów i tickety</h2>
+<h2>7. Skanowanie paragonów, tokeny i abonament</h2>
 
 <p>Funkcja skanowania odczytuje pozycje i kwoty ze zdjęcia paragonu. Do jej użycia potrzebne są
-<strong>tickety</strong> — wewnętrzne jednostki rozliczeniowe aplikacji.</p>
+<strong>tokeny</strong> — wewnętrzne jednostki rozliczeniowe aplikacji (w dawnych wersjach
+regulaminu: tickety). Jedno zdjęcie paragonu = jeden token; skanowanie, którego nie udało się
+odczytać, nie zużywa tokenów.</p>
 <ul>
-  <li>Nowe konto otrzymuje startową pulę ticketów nieodpłatnie.</li>
-  <li>Tickety <strong>nie mają wartości pieniężnej</strong>, nie podlegają wymianie na pieniądze
+  <li>Nowe konto otrzymuje 3 tokeny na start nieodpłatnie.</li>
+  <li>Tokeny <strong>nie mają wartości pieniężnej</strong>, nie podlegają wymianie na pieniądze
   ani przeniesieniu na innego użytkownika.</li>
-  <li>Pule ticketów mają datę ważności — po jej upływie niewykorzystane tickety przepadają.</li>
-  <li>Obecnie nie można kupić dodatkowych ticketów. Jeśli w przyszłości uruchomimy sprzedaż,
-  zasady zakupu, płatności i odstąpienia od umowy opiszemy odrębnie, przed jej udostępnieniem.</li>
+  <li>Każda pula tokenów ma datę ważności — po jej upływie niewykorzystane tokeny przepadają.
+  Skanując, zużywasz najpierw tokeny o najbliższym terminie ważności.</li>
+  <li>Dodatkowe tokeny dostajesz w ramach płatnego abonamentu albo kupujesz osobno (poniżej).</li>
+</ul>
+
+<h3>Abonament</h3>
+<ul>
+  <li>Abonament ma trzy plany o różnej liczbie tokenów na miesiąc: <strong>Plan 20, Plan 50 i
+  Plan 100</strong> (20, 50 i 100 tokenów). Aktualne ceny widzisz w aplikacji i w oknie zakupu
+  Google Play, przed potwierdzeniem płatności; zawierają podatek VAT i są podane w Twojej
+  walucie.</li>
+  <li>Płatność przeprowadza <strong>Google Play</strong>, na jego warunkach. MySancho nie widzi
+  numeru Twojej karty.</li>
+  <li>Abonament <strong>odnawia się automatycznie co miesiąc</strong>, dopóki go nie anulujesz.
+  Z każdym odnowieniem dostajesz nową pulę tokenów, ważną do końca tego okresu. Niewykorzystane
+  tokeny z poprzedniego okresu przepadają — pula się odświeża, nie kumuluje.</li>
+  <li><strong>Plan 20</strong> można rozpocząć od 7-dniowego okresu próbnego z 5 tokenami —
+  tylko jeśli nie miałeś wcześniej żadnej subskrypcji MySancho. Jeśli nie anulujesz go przed
+  końcem okresu próbnego, Google Play pobierze pierwszą opłatę.</li>
+  <li>Abonament <strong>anulujesz w każdej chwili w Google Play</strong> (Płatności i subskrypcje
+  → Subskrypcje; w aplikacji jest przycisk prowadzący tam bezpośrednio). Tokeny z opłaconego
+  okresu zostają do jego końca, potem odnowienia nie będzie.</li>
+  <li><strong>Zmiana na większy plan</strong> działa od razu: płacisz pełną cenę nowego planu,
+  a jego tokeny są ważne do końca okresu opłaconego w Google Play — Google może wydłużyć ten
+  okres o niewykorzystany czas poprzedniego planu. Niewykorzystane tokeny poprzedniego planu
+  zostają ważne do swojej daty. <strong>Zmiana na mniejszy plan</strong> zaczyna obowiązywać od
+  następnego okresu rozliczeniowego.</li>
+</ul>
+
+<h3>Dokupienie tokenów</h3>
+<ul>
+  <li>Abonenci mogą dokupić jednorazowo pakiet <strong>10 tokenów</strong>. To pojedyncza płatność,
+  bez odnowienia.</li>
+  <li>Dokupione tokeny są ważne <strong>14 dni od zakupu</strong>, niezależnie od końca okresu
+  abonamentu.</li>
+</ul>
+
+<h3>Zwroty i odstąpienie od umowy</h3>
+<ul>
+  <li>Zakup w Google Play podlega zasadom Google Play, w tym zasadom zwrotów i odstąpienia od
+  umowy wskazanym w oknie zakupu. Zwroty rozpatruje Google. Nie ograniczamy praw, które
+  przysługują Ci jako konsumentowi z mocy prawa.</li>
+  <li>Jeśli płatność zostanie Ci zwrócona, zabieramy z konta tokeny z tej płatności, których jeszcze
+  nie wykorzystałeś. Tokeny wykorzystane już na skanowanie zostają wykorzystane.</li>
+  <li>Usunięcie konta <strong>nie anuluje abonamentu</strong> i nie powoduje zwrotu opłat —
+  anuluj go w Google Play. Niewykorzystane tokeny przepadają razem z kontem.</li>
 </ul>
 
 <div class="note">
@@ -165,6 +213,9 @@ z zastrzeżeniem punktu 6 oraz kopii zachowywanych na potrzeby zgłoszeń (punkt
 zachowaj jego kopię poza aplikacją.</p>
 <p>Możemy zakończyć świadczenie usługi. Poinformujemy o tym z wyprzedzeniem co najmniej 30 dni
 i umożliwimy pobranie danych.</p>
+<p>Powyższe nie pozbawia Cię praw konsumenta. Jeśli kupiłeś abonament, a usługa nie działa
+zgodnie z umową, możesz złożyć reklamację (punkt 11) albo — w sprawie samej płatności — zwrócić
+się do Google Play.</p>
 
 <h2>9. Odpowiedzialność</h2>
 <ul>
@@ -172,7 +223,7 @@ i umożliwimy pobranie danych.</p>
   ich prawdziwości i nie odpowiadamy za skutki wprowadzenia danych błędnych.</li>
   <li>Nie odpowiadamy za rozliczenia między użytkownikami ani za spory z nich wynikające.</li>
   <li>Nie odpowiadamy za działanie usług zewnętrznych, z których korzysta aplikacja (Google,
-  Cloudflare, Anthropic, Revolut) ani za przerwy po ich stronie.</li>
+  Google Play, RevenueCat, Cloudflare, Anthropic, Revolut) ani za przerwy po ich stronie.</li>
   <li>W zakresie dozwolonym przez prawo nasza odpowiedzialność ograniczona jest do szkody
   rzeczywistej i nie obejmuje utraconych korzyści.</li>
 </ul>
@@ -195,7 +246,7 @@ w zakresie, w jakim przepisy bezwzględnie obowiązujące na to nie pozwalają.<
   z punktu 1 — odwołanie rozpatrzymy tak jak reklamację (punkt 11).</li>
   <li>Zawieszonego konta nie da się usunąć z poziomu aplikacji — o jego usunięcie poproś mailowo
   na adres z punktu 1.</li>
-  <li>Skutki usunięcia konta opisuje punkt 6 oraz
+  <li>Skutki usunięcia konta opisuje punkt 6 (grupy), punkt 7 (abonament i tokeny) oraz
   <a href="./">polityka prywatności</a>.</li>
 </ul>
 

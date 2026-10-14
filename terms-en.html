@@ -17,7 +17,7 @@
 </nav>
 
 <h1>MySancho Terms of Service</h1>
-<p class="sub">Last updated: 29 September 2026</p>
+<p class="sub">Last updated: 14 October 2026</p>
 <p class="docnav">Looking for information about personal data? <a href="privacy-en.html">Privacy Policy</a></p>
 
 <p>These terms set out the rules for using the MySancho app. They take effect when you create an
@@ -30,10 +30,14 @@ an existing one.</p>
 </div>
 
 <h2>1. Who provides the service</h2>
-<p>The MySancho app is provided by <strong>Artur Baryła</strong>, a natural person, as a
-non-commercial project.</p>
+<!-- TODO before production: the seller's details (business name, address, tax ID) once the
+     accountant has answered, if sales are to go through a registered business; do not publish
+     for production before then. -->
+<p>The MySancho app is provided by <strong>Artur Baryła</strong>.</p>
 <p>Contact: <strong><a href="mailto:artbaryl@gmail.com">artbaryl@gmail.com</a></strong></p>
-<p>Using the app is free of charge. We show no ads and we do not sell data.</p>
+<p>Basic use of the app — account, groups, expenses and settlements — is free of charge. Receipt
+scanning requires tokens, some of which are paid (section 7). We show no ads and we do not sell
+data.</p>
 
 <h2>2. What MySancho is, and what it is not</h2>
 
@@ -137,17 +141,62 @@ account is deleted, subject to section 6 and to the copies kept for reports (sec
   <a href="privacy-en.html">privacy policy</a>.</li>
 </ul>
 
-<h2>7. Receipt scanning and tickets</h2>
+<h2>7. Receipt scanning, tokens and the subscription</h2>
 
 <p>The scanning feature reads line items and amounts from a photo of a receipt. Using it requires
-<strong>tickets</strong> — the app's internal units of account.</p>
+<strong>tokens</strong> — the app's internal units of account (called tickets in earlier versions
+of these terms). One receipt photo = one token; a scan that could not be read does not use up any
+tokens.</p>
 <ul>
-  <li>A new account receives a starting batch of tickets free of charge.</li>
-  <li>Tickets have <strong>no monetary value</strong>, cannot be exchanged for money, and cannot
+  <li>A new account receives 3 tokens at the start, free of charge.</li>
+  <li>Tokens have <strong>no monetary value</strong>, cannot be exchanged for money, and cannot
   be transferred to another user.</li>
-  <li>Ticket batches have an expiry date — unused tickets are forfeited once it passes.</li>
-  <li>Additional tickets cannot currently be purchased. If we launch sales in the future, the
-  rules on purchase, payment and withdrawal will be described separately, before it goes live.</li>
+  <li>Every batch of tokens has an expiry date — unused tokens are forfeited once it passes. When
+  you scan, the tokens with the nearest expiry date are used first.</li>
+  <li>You get more tokens with a paid subscription, or you buy them separately (below).</li>
+</ul>
+
+<h3>Subscription</h3>
+<ul>
+  <li>The subscription has three plans with a different number of tokens per month:
+  <strong>Plan 20, Plan 50 and Plan 100</strong> (20, 50 and 100 tokens). Current prices are shown
+  in the app and in the Google Play purchase window, before you confirm the payment; they include
+  VAT and are given in your currency.</li>
+  <li>The payment is carried out by <strong>Google Play</strong>, on its terms. MySancho does not
+  see your card number.</li>
+  <li>The subscription <strong>renews automatically every month</strong> until you cancel it. With
+  every renewal you get a new batch of tokens, valid until the end of that period. Unused tokens
+  from the previous period are forfeited — the pool refreshes, it does not accumulate.</li>
+  <li><strong>Plan 20</strong> can be started with a 7-day trial period with 5 tokens — only if
+  you have never had a MySancho subscription before. If you do not cancel before the trial ends,
+  Google Play will charge the first payment.</li>
+  <li>You can <strong>cancel the subscription at any time in Google Play</strong> (Payments &amp;
+  subscriptions → Subscriptions; the app has a button that leads there directly). The tokens of
+  the paid period stay until it ends, and then there is no renewal.</li>
+  <li><strong>Changing to a bigger plan</strong> takes effect at once: you pay the full price of the
+  new plan, and its tokens are valid until the end of the period paid for in Google Play — Google
+  may extend that period by the unused time of the previous plan. Unused tokens of the previous
+  plan stay valid until their own date. <strong>Changing to a smaller plan</strong> takes effect
+  from the next billing period.</li>
+</ul>
+
+<h3>Token top-ups</h3>
+<ul>
+  <li>Subscribers can buy a one-off pack of <strong>10 tokens</strong>. It is a single payment,
+  with no renewal.</li>
+  <li>Tokens bought this way are valid for <strong>14 days from the purchase</strong>, regardless of
+  when the subscription period ends.</li>
+</ul>
+
+<h3>Refunds and withdrawal</h3>
+<ul>
+  <li>A purchase in Google Play is subject to Google Play's rules, including its rules on refunds
+  and withdrawal shown in the purchase window. Google handles refunds. We do not limit the rights
+  you have as a consumer by law.</li>
+  <li>If a payment is refunded to you, we take back from your account the tokens of that payment
+  that you have not used. Tokens already spent on scanning stay spent.</li>
+  <li>Deleting your account <strong>does not cancel the subscription</strong> and does not result in
+  a refund — cancel it in Google Play. Unused tokens are lost together with the account.</li>
 </ul>
 
 <div class="note">
@@ -173,6 +222,9 @@ account is deleted, subject to section 6 and to the copies kept for reports (sec
 a copy of it outside the app.</p>
 <p>We may discontinue the service. We will give at least 30 days' notice and allow you to export
 your data.</p>
+<p>The above does not take away your consumer rights. If you bought a subscription and the service
+does not work as agreed, you can file a complaint (section 11) or — about the payment itself —
+turn to Google Play.</p>
 
 <h2>9. Liability</h2>
 <ul>
@@ -180,7 +232,7 @@ your data.</p>
   are not liable for the consequences of incorrect data being entered.</li>
   <li>We are not liable for settlements between users or for disputes arising from them.</li>
   <li>We are not liable for the operation of the external services the app relies on (Google,
-  Cloudflare, Anthropic, Revolut) or for outages on their side.</li>
+  Google Play, RevenueCat, Cloudflare, Anthropic, Revolut) or for outages on their side.</li>
   <li>To the extent permitted by law, our liability is limited to actual damage and does not cover
   lost profits.</li>
 </ul>
@@ -204,8 +256,8 @@ provisions of law do not allow it.</p>
   address in section 1 — we handle the appeal like a complaint (section 11).</li>
   <li>A suspended account cannot be deleted from within the app — ask for its deletion by email
   at the address in section 1.</li>
-  <li>The effects of account deletion are described in section 6 and in the
-  <a href="privacy-en.html">privacy policy</a>.</li>
+  <li>The effects of account deletion are described in section 6 (groups), section 7 (the
+  subscription and tokens) and in the <a href="privacy-en.html">privacy policy</a>.</li>
 </ul>
 
 <h2>11. Complaints</h2>
