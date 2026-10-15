@@ -63,6 +63,10 @@ większej zmianie w aplikacji:
   konta. Ceny celowo **nie** są w regulaminie — widać je w aplikacji i w oknie zakupu Google
   Play. Gdy zmienią się plany, zasady odnowienia albo okres ważności dokupienia, popraw punkt 7
   razem z `docs/subscriptions.md` w repo backendu.
+- **Komentarzy nie ma** (od 2026-10-15). Usunięto je z aplikacji, więc polityka, regulamin i strony
+  o usuwaniu konta już ich nie wspominają, a zgłaszanie i blokowanie dotyczą wpisów, zdjęć, grup
+  i osób. Gdyby komentarze wróciły — wróci też punkt o treściach, które widzą pozostali członkowie,
+  i wiersz w formularzu *Bezpieczeństwo danych* (zob. `docs/play-data-safety.md` w repo aplikacji).
 - **Osoby bez konta** (od 2026-10-15). Admin grupy może wpisać imię kogoś, kto nie ma aplikacji
   (funkcja „Dodaj osobę bez konta”). Regulamin (punkt 4, „Osoby bez konta”) robi wyjątek od zakazu
   wprowadzania danych osób, które nie wyraziły zgody; polityka ma osobną kategorię danych, podstawę
