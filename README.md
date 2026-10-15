@@ -63,6 +63,12 @@ większej zmianie w aplikacji:
   konta. Ceny celowo **nie** są w regulaminie — widać je w aplikacji i w oknie zakupu Google
   Play. Gdy zmienią się plany, zasady odnowienia albo okres ważności dokupienia, popraw punkt 7
   razem z `docs/subscriptions.md` w repo backendu.
+- **Osoby bez konta** (od 2026-10-15). Admin grupy może wpisać imię kogoś, kto nie ma aplikacji
+  (funkcja „Dodaj osobę bez konta”). Regulamin (punkt 4, „Osoby bez konta”) robi wyjątek od zakazu
+  wprowadzania danych osób, które nie wyraziły zgody; polityka ma osobną kategorię danych, podstawę
+  (prawnie uzasadniony interes), okres przechowywania i prawa takiej osoby. Zmieniając zasady —
+  usuwanie z historią zostawia osobę jako nieaktywną do usunięcia grupy — popraw te miejsca razem
+  z `docs/group-api.md` (sekcja 13) w repo backendu.
 - **Sprzedawca.** Punkt 1 regulaminu i polityki podaje dziś tylko „Art Technology — Artur Baryła”
   i e-mail kontaktowy — taka jest decyzja właściciela (pełne dane firmy i adres są w sklepach). Czy to wystarcza wobec obowiązków
   informacyjnych wobec konsumenta, ma ocenić prawnik (lista niżej).
@@ -76,8 +82,10 @@ Dokumenty **nie były opiniowane przez prawnika**. Zanim aplikacja wyjdzie poza 
    - regulamin: punkt 7 (abonament, odnowienie automatyczne, zmiana planu, zwroty, prawo
      odstąpienia od umowy przy treściach cyfrowych — Google Play pisze o utracie prawa
      odstąpienia „z wyjątkiem usług”), punkt 9 (odpowiedzialność), punkt 11 (reklamacje),
-     punkt 10 (zawieszanie kont);
-   - polityka: podstawy prawne (punkt 5), okresy przechowywania danych o zakupach (punkt 6),
+     punkt 10 (zawieszanie kont), punkt 4 (wyjątek dla osób bez konta — czy wystarczy
+     „osoba o tym wie”, czy trzeba dodatkowych zastrzeżeń);
+   - polityka: podstawy prawne (punkt 5, w tym imię osoby bez konta na podstawie prawnie
+     uzasadnionego interesu), okresy przechowywania danych o zakupach (punkt 6),
      przekazywanie danych poza EOG (RevenueCat, Anthropic — punkt 4), usuwanie danych
      w RevenueCat i w grupach (punkt 8).
 2. **Zakres danych sprzedawcy w punkcie 1 regulaminu i polityki** — czy sama nazwa firmy i
