@@ -17,7 +17,7 @@
 </nav>
 
 <h1>Polityka prywatności — MySancho</h1>
-<p class="sub">Ostatnia aktualizacja: 15 października 2026</p>
+<p class="sub">Ostatnia aktualizacja: 21 października 2026</p>
 <p class="docnav">Szukasz zasad korzystania z aplikacji? <a href="terms.html">Regulamin aplikacji</a></p>
 
 <p>MySancho to aplikacja do dzielenia wspólnych kosztów. Ten dokument opisuje, jakie dane
@@ -69,6 +69,11 @@ aplikacja zbiera, po co, komu je przekazuje i <strong>kto może je zobaczyć</st
       <td>Zakupy i abonament</td>
       <td>Wybrany plan i jego status (aktywny, anulowany, wygasły), daty zakupu i odnowienia, kupione dokupienia tokenów, kwota i waluta płatności, identyfikator zakupu w sklepie, saldo tokenów i terminy ich ważności. <strong>Nie otrzymujemy numeru karty ani innych danych płatniczych</strong></td>
       <td>Ze sklepu Google Play (przez RevenueCat) po dokonaniu zakupu; saldo tokenów — z naszego serwera</td>
+    </tr>
+    <tr>
+      <td>Powiadomienia push</td>
+      <td>Token urządzenia (identyfikator, pod który system telefonu dostarcza powiadomienia), platforma (Android albo iOS), język i wersja aplikacji oraz Twoje ustawienia powiadomień: które rodzaje zdarzeń chcesz dostawać, filtr „tylko to, co mnie dotyczy” i grupy, które wyciszyłeś. <strong>Token zapisujemy dopiero po Twojej zgodzie na powiadomienia w systemie telefonu</strong></td>
+      <td>Z Twojego telefonu (token wydaje Google albo, na iPhonie, Apple); ustawienia — od Ciebie</td>
     </tr>
     <tr>
       <td>Zgłoszenia i blokady</td>
@@ -177,6 +182,11 @@ są widoczne wyłącznie w obrębie grupy, do której należysz.</p>
       <td>Przeprowadzenie płatności za abonament i dokupienie tokenów</td>
     </tr>
     <tr>
+      <td>Google (Firebase Cloud Messaging) oraz, na iPhonie, Apple (Apple Push Notification service)</td>
+      <td>Token urządzenia i treść powiadomienia: nazwa grupy, imię osoby, która coś dodała, i opis wydatku albo imię nowego członka. <strong>Bez kwot</strong></td>
+      <td>Dostarczenie powiadomienia push na Twój telefon</td>
+    </tr>
+    <tr>
       <td>RevenueCat, Inc.</td>
       <td>Identyfikator użytkownika w aplikacji, informacje o zakupach i abonamencie oraz dane techniczne zapytań (m.in. adres IP)</td>
       <td>Obsługa abonamentów: weryfikacja zakupów, zarządzanie planami i przekazanie nam informacji o zakupie</td>
@@ -204,6 +214,11 @@ Komisję Europejską.</p>
   lub dokupienia tokenów: przyznanie tokenów, odnowienia, zmiana planu, zwroty.</li>
   <li><strong>Obowiązek prawny</strong> (art. 6 ust. 1 lit. c RODO) — przechowywanie danych
   o zakupach przez czas wymagany przepisami podatkowymi i rachunkowymi.</li>
+  <li><strong>Zgoda</strong> (art. 6 ust. 1 lit. a RODO) — powiadomienia push o tym, co dzieje się
+  w Twoich grupach. Token urządzenia zapisujemy dopiero po tym, jak zgodzisz się na powiadomienia
+  w systemie telefonu. Zgodę cofasz w ustawieniach telefonu — przy najbliższym uruchomieniu aplikacji
+  usuwamy wtedy token z serwera. Możesz też wyłączyć powiadomienia w aplikacji (Profil →
+  Powiadomienia): nic wtedy nie wysyłamy, a token zostaje do wylogowania.</li>
   <li><strong>Prawnie uzasadniony interes</strong> (art. 6 ust. 1 lit. f RODO) — przechowywanie
   imienia osoby bez konta, które administrator grupy wpisał, żeby rozliczać z nią wspólne
   wydatki; interesem jest sprawiedliwe rozliczenie całej grupy, a zakres danych ogranicza się do
@@ -235,6 +250,9 @@ Komisję Europejską.</p>
   do rozpatrzenia odwołania lub obrony przed roszczeniami; pozwala ocenić, czy naruszenie się
   powtarza.</li>
   <li>Blokady — dopóki ich nie zdejmiesz.</li>
+  <li>Token urządzenia — do wylogowania, cofnięcia zgody na powiadomienia albo usunięcia konta; usuwamy
+  go też, gdy dostawca powiadomień odrzuci go jako nieistniejący (np. po odinstalowaniu aplikacji).
+  Ustawienia powiadomień i wyciszone grupy — do usunięcia konta.</li>
   <li>Imię osoby dodanej bez konta — dopóki administrator nie usunie jej z grupy albo grupa nie
   zostanie usunięta. Jeśli taka osoba nie występuje w żadnym wydatku, usunięcie kasuje ją od razu;
   jeśli występuje, zostaje przy tych wpisach jako „nieaktywna” — razem z wydatkami, których
@@ -270,6 +288,7 @@ mailowo, pisząc na adres z punktu 1 — realizujemy takie zgłoszenia w ciągu 
   <li>zdjęcie profilowe — kasowane z magazynu plików (jeśli ktoś je wcześniej zgłosił, jego
   kopia zostaje w zgłoszeniu — punkt 6),</li>
   <li>tag Revolut, jeśli był podany,</li>
+  <li>tokeny urządzeń, ustawienia powiadomień i wyciszone grupy,</li>
   <li>konto logowania — dostęp do aplikacji przestaje działać od razu.</li>
 </ul>
 

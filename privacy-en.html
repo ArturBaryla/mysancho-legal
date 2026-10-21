@@ -17,7 +17,7 @@
 </nav>
 
 <h1>Privacy Policy — MySancho</h1>
-<p class="sub">Last updated: 15 October 2026</p>
+<p class="sub">Last updated: 21 October 2026</p>
 <p class="docnav">Looking for the rules of use? <a href="terms-en.html">Terms of Service</a></p>
 
 <p>MySancho is an app for splitting shared costs. This document explains what data the app
@@ -74,6 +74,11 @@ collects, why, who it is shared with, and <strong>who can see it</strong>.</p>
       <td>Purchases and subscription</td>
       <td>The chosen plan and its status (active, cancelled, expired), purchase and renewal dates, token top-ups bought, the amount and currency of the payment, the store's transaction identifier, the token balance and its expiry dates. <strong>We do not receive your card number or any other payment details</strong></td>
       <td>From the Google Play store (via RevenueCat) after a purchase; the token balance — from our server</td>
+    </tr>
+    <tr>
+      <td>Push notifications</td>
+      <td>The device token (the identifier your phone's system uses to deliver notifications), the platform (Android or iOS), the language and version of the app, and your notification settings: which kinds of events you want to hear about, the "only what concerns me" filter and the groups you muted. <strong>We store the token only after you allow notifications in your phone's system</strong></td>
+      <td>From your phone (the token is issued by Google or, on an iPhone, by Apple); the settings — from you</td>
     </tr>
     <tr>
       <td>Reports and blocks</td>
@@ -182,6 +187,11 @@ is visible only within the group you belong to.</p>
       <td>Carrying out the payment for a subscription and for token top-ups</td>
     </tr>
     <tr>
+      <td>Google (Firebase Cloud Messaging) and, on an iPhone, Apple (Apple Push Notification service)</td>
+      <td>The device token and the text of the notification: the group name, the name of the person who added something, and the description of the expense or the name of the new member. <strong>No amounts</strong></td>
+      <td>Delivering the push notification to your phone</td>
+    </tr>
+    <tr>
       <td>RevenueCat, Inc.</td>
       <td>The user identifier in the app, information about purchases and the subscription, and technical data of the requests (including the IP address)</td>
       <td>Running subscriptions: verifying purchases, managing plans and passing the purchase information on to us</td>
@@ -208,6 +218,11 @@ on the basis of Standard Contractual Clauses approved by the European Commission
   subscription or a token top-up: granting tokens, renewals, plan changes, refunds.</li>
   <li><strong>Legal obligation</strong> (Art. 6(1)(c) GDPR) — keeping purchase data for as long as
   tax and accounting law requires.</li>
+  <li><strong>Consent</strong> (Art. 6(1)(a) GDPR) — push notifications about what happens in your
+  groups. We store the device token only after you allow notifications in your phone's system. You
+  withdraw consent in the phone's settings — the next time you open the app we then remove the token
+  from our server. You can also turn notifications off in the app (Profile → Notifications): we then
+  send nothing, and the token stays until you sign out.</li>
   <li><strong>Legitimate interest</strong> (Art. 6(1)(f) GDPR) — keeping the first name of a person
   without an account whom a group administrator entered in order to settle shared expenses with
   them; the interest is a fair settlement for the whole group, and the data is limited to the
@@ -239,6 +254,10 @@ on the basis of Standard Contractual Clauses approved by the European Commission
   long as needed to handle an appeal or to defend against claims; it shows whether a breach is
   repeated.</li>
   <li>Blocks — until you lift them.</li>
+  <li>The device token — until you sign out, withdraw consent for notifications or delete your
+  account; we also remove it when the notification provider rejects it as non-existent (for example
+  after the app is uninstalled). Notification settings and muted groups — until you delete your
+  account.</li>
   <li>The name of a person added without an account — until an administrator removes them from the
   group or the group is deleted. If such a person appears in no expense, removing them deletes them
   at once; if they do, they stay on those entries marked as "inactive" — together with the expenses
@@ -275,6 +294,7 @@ requests within 30 days.</p>
   <li>your profile picture — erased from file storage (if someone reported it earlier, its copy
   stays in the report — section 6),</li>
   <li>your Revolut tag, if one was set,</li>
+  <li>your device tokens, notification settings and muted groups,</li>
   <li>your sign-in account — access stops working straight away.</li>
 </ul>
 
