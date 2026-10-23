@@ -37,8 +37,8 @@ aplikacja zbiera, po co, komu je przekazuje i <strong>kto może je zobaczyć</st
   <tbody>
     <tr>
       <td>Konto</td>
-      <td>Adres e-mail, imię lub nazwa wyświetlana, zdjęcie profilowe, identyfikator użytkownika</td>
-      <td>Podane przy rejestracji mailem albo pobrane z konta Google przy logowaniu</td>
+      <td>Adres e-mail, imię lub nazwa wyświetlana, zdjęcie profilowe, identyfikator użytkownika, język ustawiony w aplikacji</td>
+      <td>Podane przy rejestracji mailem albo pobrane z konta Google przy logowaniu; język — z aplikacji, przy rejestracji i przy każdej jego zmianie</td>
     </tr>
     <tr>
       <td>Grupy</td>
@@ -61,9 +61,9 @@ aplikacja zbiera, po co, komu je przekazuje i <strong>kto może je zobaczyć</st
       <td>Z aparatu lub galerii — wyłącznie te pliki, które sam wskażesz</td>
     </tr>
     <tr>
-      <td>Aktywność</td>
-      <td>Historia zmian wydatków (kto co zmienił i kiedy)</td>
-      <td>Od Ciebie i pozostałych uczestników</td>
+      <td>Dziennik zmian</td>
+      <td>Dla tekstu i zdjęcia wydatku oraz nazwy, opisu i okładki grupy: kto to zmienił i kiedy — wyłącznie identyfikator osoby, czas i nazwy zmienionych pól, <strong>nigdy treść, na jaką zmieniono</strong>. Nikomu niepokazywany w aplikacji</td>
+      <td>Automatycznie, gdy Ty lub inny uczestnik je zmienicie</td>
     </tr>
     <tr>
       <td>Zakupy i abonament</td>
@@ -134,7 +134,9 @@ działać. Nie udostępniaj takich linków dalej.</p>
 
 <h3>Zgłoszenia i blokady</h3>
 <p>Zgłoszenie widzi wyłącznie administrator. Autor zgłoszonej treści nie dowiaduje się, kto ją
-zgłosił. Blokadę widzisz tylko Ty — zablokowana osoba nie jest o niej informowana.</p>
+zgłosił. Blokadę widzisz tylko Ty — zablokowana osoba nie jest o niej informowana. Dziennik zmian
+czyta wyłącznie administrator, żeby ustalić, kto zmienił zgłoszoną rzecz; w aplikacji nie ma
+na niego żadnego ekranu.</p>
 
 <h3>Administrator</h3>
 <p>Administrator aplikacji ma techniczny dostęp do bazy danych oraz do magazynu zdjęć —
@@ -227,7 +229,9 @@ Komisję Europejską.</p>
   potrzebne do zapewnienia bezpieczeństwa i diagnozowania awarii.</li>
   <li><strong>Prawnie uzasadniony interes</strong> (art. 6 ust. 1 lit. f RODO) — rozpatrywanie
   zgłoszeń, blokady i zawieszanie kont, czyli ochrona użytkowników przed treściami
-  i zachowaniami naruszającymi regulamin.</li>
+  i zachowaniami naruszającymi regulamin. Temu służy dziennik zmian: każdy członek grupy może
+  edytować to, co da się zgłosić, a bez zapisu, kto to zrobił, nie dałoby się wskazać osoby
+  odpowiedzialnej.</li>
 </ul>
 
 <h2>6. Jak długo przechowujemy dane</h2>
@@ -246,6 +250,10 @@ Komisję Europejską.</p>
   z kopią. Do tego czasu kopia zostaje, nawet jeśli autor usunie treść lub konto — inaczej
   usunięcie zgłoszonej treści niszczyłoby dowód. Zgłoszenie przekazane organom ścigania
   pozostaje otwarte do zakończenia sprawy.</li>
+  <li>Dziennik zmian — dopóki istnieje wydatek lub grupa, których dotyczy, ale najwyżej
+  <strong>180 dni</strong>. Gdy wydatek lub grupa zostaną usunięte, ich historia jest usuwana razem
+  z nimi od razu; wyjątkiem jest to, co zostało zgłoszone — historia zostaje do czasu, gdy
+  zgłoszenie jest przechowywane (wyżej), i wtedy też jest usuwana.</li>
   <li>Historia zawieszeń konta — przez czas zawieszenia, a po nim tak długo, jak to niezbędne
   do rozpatrzenia odwołania lub obrony przed roszczeniami; pozwala ocenić, czy naruszenie się
   powtarza.</li>
@@ -288,6 +296,7 @@ mailowo, pisząc na adres z punktu 1 — realizujemy takie zgłoszenia w ciągu 
   <li>zdjęcie profilowe — kasowane z magazynu plików (jeśli ktoś je wcześniej zgłosił, jego
   kopia zostaje w zgłoszeniu — punkt 6),</li>
   <li>tag Revolut, jeśli był podany,</li>
+  <li>język ustawiony w aplikacji,</li>
   <li>tokeny urządzeń, ustawienia powiadomień i wyciszone grupy,</li>
   <li>konto logowania — dostęp do aplikacji przestaje działać od razu.</li>
 </ul>
@@ -296,6 +305,8 @@ mailowo, pisząc na adres z punktu 1 — realizujemy takie zgłoszenia w ciągu 
 <ul>
   <li>wydatki, podziały i rozliczenia, które dodałeś,</li>
   <li><strong>zdjęcia paragonów, które wgrałeś</strong>,</li>
+  <li>Twój identyfikator w dzienniku zmian wydatków i grup, które nadal istnieją, najwyżej przez
+  180 dni (punkt 6) — Twoje konto jest zanonimizowane, więc identyfikator nic już o Tobie nie mówi,</li>
   <li>osoby bez konta, które dopisałeś jako administrator — zostają w grupie bez zmian, razem
   z wydatkami, w których występują.</li>
 </ul>
