@@ -54,3 +54,31 @@ footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--lin
 
 /* Odnośnik do drugiego dokumentu w tym samym języku. */
 .docnav { margin: 0 0 2rem; font-size: .95rem; color: var(--muted); }
+
+/* Spis treści na początku dokumentu: numerowane rozdziały z odnośnikami, jak w regulaminach
+   większych aplikacji — przy dwudziestu rozdziałach bez niego nie da się nic znaleźć. */
+.toc {
+  border: 1px solid var(--line); border-radius: 6px;
+  padding: .9rem 1.2rem .6rem; margin: 0 0 2rem; font-size: .95rem;
+}
+.toc-title { margin: 0 0 .4rem; font-weight: 600; }
+.toc ol { margin: 0; padding-left: 1.6rem; columns: 2 16rem; column-gap: 2rem; }
+.toc li { margin: .2rem 0; break-inside: avoid; }
+
+/* Punkty „rozdział.punkt” — numer wysunięty na lewo, żeby dało się go wskazać w reklamacji. */
+.pt { margin: .7rem 0; padding-left: 2.6rem; text-indent: -2.6rem; }
+.pt .no { display: inline-block; min-width: 2.6rem; text-indent: 0; font-weight: 600; color: var(--muted); }
+h2 { scroll-margin-top: 1rem; }
+
+/* Wyliczenia a), b), c) wewnątrz punktów. */
+ol.alpha { list-style: none; counter-reset: alpha; padding-left: 4rem; margin: .4rem 0 .9rem; }
+ol.alpha > li { counter-increment: alpha; position: relative; }
+ol.alpha > li::before { content: counter(alpha, lower-alpha) ")"; position: absolute; left: -1.6rem; color: var(--muted); }
+
+/* Na wąskim ekranie mniejsze wcięcia, żeby tekst punktów nie ściskał się w wąski słupek. */
+@media (max-width: 30rem) {
+  .pt { padding-left: 2.3rem; text-indent: -2.3rem; }
+  .pt .no { min-width: 2.3rem; }
+  ol.alpha { padding-left: 2.8rem; }
+  ol.alpha > li::before { left: -1.4rem; }
+}
